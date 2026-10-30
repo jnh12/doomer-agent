@@ -6,13 +6,11 @@
 
 **Let your agent have a little doomscroll session.**
 
-For once, someone might learn something.
-
 [Download the skill](doomer-agent-skill.zip) · [See an example](example-reel-edit-plan.md)
 
 </div>
 
-Give Codex or Claude the reels you saved “for later.” It studies them and turns the useful advice into reusable skills — editing videos, writing hooks, planning content, whatever you actually meant to learn.
+Give Codex or Claude the reels you saved “for later” but never went back to. It studies them and turns the useful advice into reusable skills: editing videos, writing hooks, planning content, whatever you actually meant to learn.
 
 One skill file. No app to deploy. Just a questionable screen-time habit put to work.
 

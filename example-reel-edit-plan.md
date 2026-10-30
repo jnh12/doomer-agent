@@ -41,7 +41,7 @@ Treat the following as sample style requirements that take priority over the tec
 
 1. **Edit table:** time range | what the speaker says | what's on screen (card, text, b-roll) | source label | notes.
 2. **Assets list:** screenshots to grab, charts with their data and source, any clips to record.
-3. **Flags:** anything in the take that fails `reel-diagnosis` item 1 or 6 (a dead first frame, nothing new by 3 seconds, hook text that's hard to read), with the fix.
+3. **Flags:** a dead first frame, nothing new by 3 seconds, or hook text that's hard to read, each with a suggested fix.
 
 If the creator asks for the edit itself, build it from the table, render a draft, pull frames at 0, 1, 2, 3s and a few more across the reel, and check them before sending.
 

@@ -1,6 +1,6 @@
 ---
 name: doomer-agent
-description: Study a batch of saved short-form videos (Instagram reels, TikToks, YouTube Shorts) and turn what they teach into a few reusable skills. Use when someone shares video links or a saved collection and wants Claude to learn from them.
+description: Study a batch of saved short-form videos (Instagram reels, TikToks, YouTube Shorts) and turn what they teach into a few reusable skills. Use when someone shares video links or a saved collection and wants their agent to learn from them.
 ---
 
 # Doomer Agent
@@ -23,11 +23,11 @@ Tell them up front that going through video uses a good amount of usage, and sug
 
 Work through these access options in order, stopping at the first that succeeds:
 
-1. **Through their browser (Claude in Chrome).** Most platforms block Claude's own servers from loading videos, so use the person's logged-in browser. Open each link, read the caption, and grab the lowest-quality video and audio the page loads. If Chrome blocks multiple downloads from one page, bundle the files into one download.
+1. **Through an available browser tool.** Use Claude in Chrome in Claude, or a connected browser/computer-use tool in Codex. Check which tools are actually available; this skill does not add browser access. Use the person's logged-in browser when direct access is blocked. Open each link, read the caption, and grab the lowest-quality video and audio the page loads. If Chrome blocks multiple downloads from one page, bundle the files into one download.
 2. **From their collection directly.** If they named a collection instead of pasting links, open it in their browser and work through it. Skip anything that isn't about the job (memes, ads, off-topic posts) and tell them what you skipped.
-3. **Text only.** If you can't get the video, ask them to paste the caption and a transcript. Say that you'll miss anything that's only shown on screen.
+3. **Local files or text.** If browser access is unavailable, work from video files the person provides using available local tools. Otherwise ask them to paste the caption and a transcript. Say that you'll miss anything that's only shown on screen.
 
-Keep the files only as long as you need them. Delete anything you downloaded to their computer when you're done, and tell them you did.
+Keep the files only as long as you need them. Delete only temporary files you created or downloaded for this task when you're done, and tell them you did. Keep user-provided originals and generated skills.
 
 ## 3. Study each video
 
@@ -61,6 +61,6 @@ Then the instructions: when to use it, the steps, the rules, what the output loo
 
 ## 5. Deliver the skills
 
-- Offer the skills for them to review and save. In the Claude desktop app, propose them so they get a save card. Otherwise give them the files and tell them to upload each one under Customize > Skills (code execution needs to be on in Settings > Capabilities).
+- Offer the skills for review as folders containing `SKILL.md`. In Codex, save approved skills under `.agents/skills/<skill-name>/SKILL.md` in the target project; use `~/.agents/skills/` only when the person wants them available across projects. In Claude, provide a ZIP for each skill folder to upload under Customize > Skills (with code execution enabled).
 - Write a short report: each skill, what it's for, one example prompt that triggers it, and a table of every video with what it taught and which skill it went into.
 - Suggest running it again when they've saved more videos, and offer to update the existing skills instead of making new ones.

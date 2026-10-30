@@ -12,22 +12,36 @@ For once, someone might learn something.
 
 </div>
 
-Give Claude the reels you saved “for later.” It studies them and turns the useful advice into reusable skills — editing videos, writing hooks, planning content, whatever you actually meant to learn.
+Give Codex or Claude the reels you saved “for later.” It studies them and turns the useful advice into reusable skills — editing videos, writing hooks, planning content, whatever you actually meant to learn.
 
 One skill file. No app to deploy. Just a questionable screen-time habit put to work.
 
 ## Get started
 
-1. Download [doomer-agent-skill.zip](doomer-agent-skill.zip).
-2. In Claude, open **Customize > Skills**, click **+**, and upload it. Enable code execution under **Settings > Capabilities**.
-3. Share your video links or a saved collection, and tell Claude what you want to learn:
+### Codex
+
+Download and extract [doomer-agent-skill.zip](doomer-agent-skill.zip). Put the `doomer-agent` folder in your project's `.agents/skills/` directory:
+
+```text
+.agents/skills/doomer-agent/SKILL.md
+```
+
+For use across projects, put it in `~/.agents/skills/` instead. Ask Codex to use the doomer-agent skill; in the CLI or IDE, you can mention `$doomer-agent`. If it doesn't appear, restart Codex. [Codex skills guide](https://learn.chatgpt.com/docs/build-skills).
+
+### Claude
+
+Download [doomer-agent-skill.zip](doomer-agent-skill.zip). Open **Customize > Skills**, click **+**, and upload it. Enable code execution under **Settings > Capabilities**.
+
+### Let it scroll
+
+Share video links, a saved collection, or local videos, and tell your agent what you want to learn:
 
 ```text
 Doomscroll my "editing tips" collection and turn what it teaches
 into skills for editing my Instagram reels.
 ```
 
-To browse a collection, use Claude desktop with the **Claude in Chrome** extension, signed into the video platform. You can also paste captions and transcripts.
+Browsing a collection needs a connected browser tool signed into the video platform: **Claude in Chrome** for Claude, or an available browser/computer-use tool for Codex. Without one, provide local videos or paste captions and transcripts. The skill itself does not install browser or transcription tools.
 
 Review the skills it produces, save the useful ones, and ask for that kind of work next time.
 

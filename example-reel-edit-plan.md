@@ -5,7 +5,7 @@ description: "Turn a recorded take and its script into a timestamped edit plan (
 
 # Reel edit plan
 
-Use this after the creator records a take and wants Claude to edit it or plan the edit. The output is a timestamped edit list tied to what the speaker says, then the edit itself if the creator asks for it.
+Use this after the creator records a take and wants the agent to edit it or plan the edit. The output is a timestamped edit list tied to what the speaker says, then the edit itself if the creator asks for it.
 
 ## 1. Edit style (always applies)
 
